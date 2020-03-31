@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-weidth,initial-scale=1.0">
+    <title>徐霞客游记</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/page1.css">
+    <link rel="stylesheet" href="../css/page3.css">
+    <link rel="stylesheet" href="../css/page4.css">
+    <link rel="stylesheet" href="../css/page5.css">
+    <link rel="stylesheet" href="../css/page6.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="header">
+            <h1>徐霞客地理信息系统</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">霞客生平</a></li>
+                <li><a href="#">霞客亲友</a></li>
+                <li><a href="#">霞客旅行</a></li>
+                <li><a href="#">霞客诗文</a></li>
+                <li><a href="#">霞客游记</a></li>
+                <li><a href="#">地理贡献</a></li>
+            </ul>
+        </div>
+        <div id="pages">
+            <div class="page">
+                <div class="up">
+                    <div class="img">
+                        <img src="../imgs/徐霞客.jpg" alt="徐霞客">
+                    </div>
+                    <div class="description">
+                        <h2>徐霞客简介</h2>
+                        <p><b>徐霞客（1587年1月5日-1641年3月8日）</b>，名弘祖，字振之，号霞客，南直隶江阴（今江苏江阴市）人，是我国明代杰出的地理学家、探险旅行家和《游记》文学家。徐霞客一生志在四方，足迹遍及今21个省、市、自治区，并记有游记，记录观察到的各种现象、人文、地理、动植物等状况。他忠实记录考察路线，沿途所见山川地貌，风土人情等地理事物，留下60余万字的《徐霞客游记》，反映了我国乃至全世界当时认识地理环境的最高水平。开创了地理学系统观察自然现象，描述地理环境的新方向。从而突破了古典地理学传统的束缚，使我国的地理学进入到近代地理学发展的新阶段。同时，他在岩溶地貌研究、水文地理研究、植物地理研究等许多方面，都攀登了当时地理学发展的世界最高峰。
+                        </p>
+                        <p>作为明代一位杰出的地理学家、旅行家、文学家，徐霞客一生的成就是多方面的。钱谦益在读到《徐霞客游记》残本时，曾发出感佩：“<b>徐霞客千古奇人，《游记》乃千古残本</b>”，“<b>此世间真文字、大文字、奇文字，不当今泯灭不传！</b>”清代著名学者潘耒评价：“<b>吾于霞客之游，不服其阔辽，而服其精详；于霞客之书，不多其博辨，而多其真实</b>>”。二十世纪二十年代，中国近代地学奠基人丁文江先生，在云南作地质地理考察，以其亲身经历，“<b>始惊叹先生精力之富，观察之精，记载之详且实。</b>”并为之整理和重印《徐霞客游记》，撰写《徐霞客先生年谱》和绘制《徐霞客旅行考察路线图集》。竺可桢《在徐霞客之时代》一文中，高度评价了徐霞客“<b>以求知而探险</b>”的科学精神，从而奠定了徐霞客及其《游记》的科学研究基础。
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="down">
+                    <h2>徐霞客年谱</h2>
+                    <div class="table">
+
+                    </div>
+                </div>
+            </div>
+            <div class="page">
+            </div>
+            <div class="page">
+                <div class="left">
+                    <div class="place" id="inside">
+                    </div>
+                    <div class="img">
+                    </div>
+                </div>
+                <div class="right"></div>
+                <div class="info"></div>
+            </div>
+            <div class="page">
+                <div class="container">
+                </div>
+            </div>
+            <div class="page">
+                <div class="buttons">
+                    <button onclick="show_search()">筛选</button>
+                    <button onclick="send_post()">搜索</button>
+                </div>
+                <div class="search" style="display: none;">
+                    <div class="radios">
+                        <span><input type="radio" name="search" checked="changed"
+								onchange="radio_change('radio2','radio1')">目的地</span>
+                        <span><input type="radio" name="search" onchange="radio_change('radio1','radio2')">时间</span>
+                    </div>
+                    <div class="input">
+                        <div class="radio1 input">
+                            <span>目的地：<input type="text" name="diming"></span>
+                        </div>
+                        <div class="radio2 input" style="display: none;">
+                            <span>年龄：<input type="text" name="age"></span>
+                            <span>||</span>
+                            <span>时间：<input type="text" name="year"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="class" name="游名山大川">
+                    <div class="float">游名山大川</div>
+                </div>
+                <div class="class" name="西南万里遐游之浙游和江右游">
+                    <div class="float">西南万里遐游之浙游和江右游</div>
+                </div>
+                <div class="class" name="西南万里遐游之楚游">
+                    <div class="float">西南万里遐游之楚游</div>
+                </div>
+                <div class="class" name="西南万里遐游之粤西游">
+                    <div class="float">西南万里遐游之粤西游</div>
+                </div>
+                <div class="class" name="西南万里遐游之黔游">
+                    <div class="float">西南万里遐游之黔游</div>
+                </div>
+                <div class="class" name="西南万里遐游之滇游">
+                    <div class="float">西南万里遐游之滇游</div>
+                </div>
+            </div>
+            <div class="page">
+                <h2>地理贡献</h2>
+                <div class="container">
+                    <div class="review">
+                        <div class="img">
+                            <img src="../imgs/地理贡献.jpg" alt="地理贡献">
+                        </div>
+                        <div class="description">
+                            <p>英国科学技术史权威李约瑟(J. Needham)之《中国科学技术史》一书中评价徐霞客的工作和他的《游记》时说：“他的《游记》读起来并不像是17世纪的学者所写的东西，倒像一位20世纪的野外勘测家所写的考察记录。他不但在分析各种地貌上具有惊人的能力，而且能够系统地使用各种专门术语。”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="landforms">
+                        <div class="description">
+                            <p>徐霞客亲自探查了270多个洞穴古，其数量之多，类型之全是世界上单个地理学家所未曾达到的。1637年徐霞客到桂林，一个半月中考察60多个洞穴，重点考察了七星岩洞，他目测步量详作记录，与现代测绘相符，证实了他的科学性。
+                            </p>
+                        </div>
+                        <div class="img">
+                            <img src="../imgs/洞穴地貌.jpg" alt="洞穴地貌">
+                        </div>
+                    </div>
+                    <div class="landforms">
+                        <div class="img">
+                            <img src="../imgs/火山地貌.jpg" alt="火山地貌">
+                        </div>
+                        <div class="description">
+                            <p>公元1639年5月，徐霞客考察滇西南腾越(今腾冲)火山活动地区，观察仔细，描述准确、逼真、生动。公元1639年，年逾半百的徐霞客在云南考察地热状况共16次，勾划出温泉分布的大致范围，仍然是当今开发地热资源的重要资料。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="landforms">
+                        <div class="description">
+                            <p>徐霞客在万里遐征中，不仅考察了苗、布依、彝、回、纳西、白、傣、德昂、布朗等民族地区的自然地理，而且对少数民族的社会生活风情，也作了真实生动的记述，是一份珍贵的历史资料。</p>
+                        </div>
+                        <div class="img">
+                            <img src="../imgs/人文地理.jpg" alt="人文地理">
+                        </div>
+                    </div>
+                    <div class="landforms">
+                        <div class="img">
+                            <img src="../imgs/植物地理.jpg" alt="植物地理">
+                        </div>
+                        <div class="description">
+                            <p>徐霞客具有广博的植物学知识，他在野外考察时也常注意植物的分布与地理环境的生态关系</p>
+                        </div>
+                    </div>
+                    <div class="landforms">
+                        <div class="description">
+                            <p>徐霞客先后考察了长江、黄河、珠江、澜沧江怒江、金沙江等水系，《游记》中记载大小河流500多条，湖泽近60个，以及海、潭、池、沼等，并写有《江源考》、《盘江考》两部巨著，他对我国的水系，提出了“龙远江亦远，脉长源亦长”的总体概念。现在得知长江流域面积约180.5万平方公里，黄河流域面积74.5万平方公里，证明了徐霞客“计具吐纳江倍于河”这一正确的论断。徐霞客经实地考察，作出“故推江源者，必当以金沙为首”的论断，敢以真理驳圣经《禹贡》，例正了经典“岷山导江”之误。
+                            </p>
+                        </div>
+                        <div class="img">
+                            <img src="../imgs/水系地貌.jpg" alt="水系地貌">
+                        </div>
+                    </div>
+                    <div class="landforms">
+                        <div class="img">
+                            <img src="../imgs/岩溶地貌.jpg" alt="岩溶地貌">
+                        </div>
+                        <div class="description">
+                            <p>徐霞客在地理学上的贡献是多方面的。他旅行考察，对照图经志籍大胆纠正志书图经记载的错误。忠实记录了岩溶地貌、洞穴地貌、水系地貌、火山地貌、植物地理、人文地理等方面情况。他的许多名称术语一直延用至今。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="foot">
+            <p><small>WebGIS课程作业 组员：赵美涵，朱铭凡</small></p>
+            <p><small><a href="https://lbs.amap.com/">技术支持：高德API</a></small></p>
+        </div>
+    </div>
+
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=53550bc9ace4166442a4096d0b56a27d"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.core.min.js"></script>
+    <script src="../node_modules/relation-chart/dist/dist.js"></script>
+    <script src="../data/xkyj.json"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/page1.js"></script>
+    <script src="../js/page2.js"></script>
+    <script src="../js/page3.js"></script>
+    <script src="../js/page4.js"></script>
+    <script src="../js/page5.js"></script>
+</body>
+
+</html>

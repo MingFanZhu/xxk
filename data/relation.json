@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {"name": "徐霞客", "avatar": "../imgs/people/徐霞客.jpg","role_id": 0},
+    {"name": "徐有勉", "avatar": "../imgs/people/徐有勉.jpg","role_id": 1},
+    {"name": "王氏", "avatar": "../imgs/people/王氏.jpg","role_id": 2},
+    {"name": "许氏", "avatar": "../imgs/people/许氏.jpg","role_id": 3},
+    {"name": "周氏", "avatar": "../imgs/people/周氏.jpg","role_id": 4},
+    {"name": "徐宏祚", "avatar": "../imgs/people/徐宏祚.jpg","role_id": 5},
+    {"name": "徐屺", "avatar": "../imgs/people/徐屺.jpg","role_id": 6},
+    {"name": "缪氏", "avatar": "../imgs/people/缪氏.jpg","role_id": 7},
+    {"name": "徐雷门", "avatar": "../imgs/people/徐雷门.jpg","role_id": 8},
+    {"name": "罗氏", "avatar": "../imgs/people/罗氏.jpg","role_id": 9},
+    {"name": "徐岘", "avatar": "../imgs/people/徐岘.jpg","role_id": 10},
+    {"name": "陈继儒", "avatar": "../imgs/people/陈继儒.jpg","role_id": 11},
+    {"name": "徐李寄", "avatar": "../imgs/people/徐李寄.jpg","role_id": 12},
+    {"name": "季梦良", "avatar": "../imgs/people/季梦良.jpg","role_id": 13},
+    {"name": "文震孟", "avatar": "../imgs/people/文震孟.jpg","role_id": 14}
+  ],
+  "links": [
+    {"target": 1, "source": 0, "color": "734646","relation":"父"},
+    {"target": 2, "source": 0, "color": "734646","relation":"母"},
+    {"target": 3, "source": 0, "color": "734646","relation":"妻"},
+    {"target": 4, "source": 0, "color": "734646","relation":"妾"},
+    {"target": 5, "source": 0, "color": "734646","relation":"兄"},
+    {"target": 6, "source": 0, "color": "734646","relation":"子"},
+    {"target": 7, "source": 0, "color": "734646","relation":"儿媳"},
+    {"target": 8, "source": 0, "color": "734646","relation":"族兄"},
+    {"target": 9, "source": 0, "color": "734646","relation":"妻"},
+    {"target": 11, "source": 0, "color": "734646","relation":"友"},
+    {"target": 10, "source": 0, "color": "734646","relation":"子"},
+    {"target": 12, "source": 0, "color": "734646","relation":"子"},
+    {"target": 13, "source": 0, "color": "734646","relation":"侄"},
+    {"target": 14, "source": 0, "color": "734646","relation":"友"}
+  ]
+}
